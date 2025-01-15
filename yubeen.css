@@ -1,0 +1,35 @@
+nav{
+    font-family: 'Pretendard', 'AppleSDGothicNeo', 'AppleSDGothicNeo-Regular', 'Apple Gothic', 'Malgun Gothic', Arial, Helvetica, serif, sans-serif;
+    font-size: 12px;
+}
+
+.nav-first-o{
+    letter-spacing: -0.3px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-first-o>a{
+    padding-left: 1em;
+}
+
+.nav-first-o>a:hover{
+    color: #5e2bb8;
+}
+
+.nav-second-o{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-input-o{
+    margin: 1px 0 0 30px;
+    width: 410px;
+    height: 44px;
+    border-radius: 100px;
+    border: solid 2px #111;
+    padding-left: 1em;
+}
