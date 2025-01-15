@@ -1,0 +1,105 @@
+/* 삭제해야하는 속성 */
+.firstArea_park{
+    height: 1500px;
+    background-color: black;
+    color: antiquewhite;
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middleNavbar_park{
+    background-color: #446BDA;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbarButton_park{
+    width: 180px;
+    height: 80px;
+    padding: 0 24px;
+    background-color: transparent;
+    border: 0;
+    color: #aaa;
+    font-family: 'Pretendard', 'AppleSDGothicNeo', 'AppleSDGothicNeo-Regular', 'Apple Gothic', 'Malgun Gothic', Arial, Helvetica, serif, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.25;
+}
+.navbarButton_park a{
+    text-decoration: none;
+}
+.navbarButton_park.active{
+    background-color: #11111199;
+    color: #FFFF;
+    font-weight: bold;
+}
+.middleNavbar_park.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+.cardContainer_park{
+    max-width: 270px;
+}
+.cardImg_park{
+    border-radius: 20px;
+}
+.card_park{
+    border: 0;
+}
+.cardTitle_park{
+    color: #682fca;
+}
+.cardText_park{
+    font-size: 20px;
+    color: #111;
+}
+.benefit_park{
+    font-size: 14px;
+    margin: -2px 0 0 -2px;
+}
+.point1_park{
+    color: #ff299c;
+    font-size: 13px;
+    background: #f2f2f3;
+    border-radius: 4px;
+    margin: 2px 0 0 2px;
+    padding: 0 8px;
+    white-space: nowrap
+}
+.point2_park{
+    color: #7d7886;;
+    font-size: 13px;
+    background: #f2f2f3;
+    border-radius: 4px;
+    margin: 2px 0 0 2px;
+    padding: 0 8px;
+    white-space: nowrap
+}
+.bevorprice_park{
+    color: #999;
+    font-size: 14px;
+}
+.dicount_park{
+    font-size: 22px;
+    color: #ff299c;
+    margin-right: 4px;
+}
+.option_park{
+    font-size: 14px;
+    color: #666666; 
+}
+.optionSecond_park{
+    color: #aaa;
+}
+.optionSecond_park:before{
+    content: "|";
+}
+.lastText_park{
+    font-size: 27px;
+    white-space: nowrap; 
+    transform: scale(0.8); 
+    transform-origin: left center; 
+}
