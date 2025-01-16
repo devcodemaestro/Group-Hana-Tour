@@ -1,4 +1,12 @@
-const buttons = document.querySelectorAll('.navbarButton_park');
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'vertical',
+    loop: true,
+    autoplay: true,
+    });
+
+
+    const buttons = document.querySelectorAll('.navbarButton_park');
 const sections = document.querySelectorAll('section');
 
 const updateActiveButton = () => {
