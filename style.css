@@ -139,3 +139,302 @@ li>a:hover{
 .btn{
     padding: 1rem;
 }
+
+/* 
+footer css start */
+
+footer{
+  position: absolute;
+  bottom:0 ;
+  background-color: white;
+  width: 100%;
+}
+
+.ul-su{
+  display: flex;
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+
+/* 첫번째 줄 관련 CSS */
+.footer-container{
+  padding-top: 50px;
+  padding-bottom: 30px;
+
+}
+
+.fl-box-su{
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+
+}
+.first-line-sung{
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+
+.sns-icon{
+  width: 30px;
+  height: 30px;
+  background-color: #afafaf;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 25px;
+}
+
+
+/* 첫번째 줄 - 공지사항 스크롤링 스타일링 */
+.notice-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.notice-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+  white-space: nowrap;
+}
+
+.notice-more {
+  font-size: 14px;
+  color: #666;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.notice-container {
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+  width: 420px;
+
+}
+.notice-content {
+  position: absolute;
+  width: 100%;
+  animation: scrollNotice 15s ease-in-out infinite;
+}
+.notice-item {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+
+
+
+/* 두번쨰 줄 관련 CSS */
+
+.accordion {
+  display: none;
+}
+
+
+
+.second-line-su{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+
+.menus-su{
+  margin-top:30px;
+
+  margin-bottom:30px;
+}
+
+.menus-su li{
+  margin-right:30px;
+  font-weight:bold;
+  font-size: 15px;
+}
+
+.menus-su a{
+  text-decoration: none;
+  color: black;
+}
+
+
+.company-info-su li{
+  margin-right: 20px;
+  font-size: 13px;
+}
+
+.company-contact-su li{
+  margin-right: 20px;
+  font-size: 13px;
+}
+
+.company-contact-su a{
+  text-decoration: none;
+  color: black;
+}
+
+
+.second-line-container-bottom-su{
+  font-size : 13px;
+  margin: 20px 0;
+  font-weight: 700;
+}
+.second-line-container-bottom-su div{
+  margin:5px 0
+}
+
+
+
+@keyframes scrollNotice {
+  0%, 25% {
+      transform: translateY(0);
+  }
+  33%, 58% {
+      transform: translateY(-40px);
+  }
+  66%, 91% {
+      transform: translateY(-80px);
+  }
+  100% {
+      transform: translateY(-120px);
+  }
+}
+.notice-container:hover .notice-content {
+  animation-play-state: paused;
+}
+
+
+
+/* 모바일(테블릿) 미디어쿼리 */
+@media (max-width:992px) {
+  .notice-wrapper{
+      display:none;
+  }
+
+  .first-line-sung{
+      display: block;
+  }
+
+  .sns-area{
+      justify-content: center;
+  }
+
+  .last{
+      margin-right: 0px;
+  }
+
+  .menus-su{
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .menus-su li{
+      margin-right: 0px;
+      }
+}
+
+/* 모바일(테블릿) 미디어쿼리 */
+
+
+  @media (max-width:600px){
+      /* 컨테이너 관련 */
+     .container-sung {
+          padding-left: 0;
+          padding-right: 0;
+      }
+
+      /* 메뉴 스타일링 */
+      .menus-su{
+          display: block;
+          text-align: center;
+          align-items: center;
+          margin-top: 30px;
+          width: 100%;
+      }
+
+      .menus-mi{
+          display: none;
+      }
+
+      .menus-su li{
+          margin-top: 10px;
+      }
+
+      .company-info-su{
+          display: none;
+      }
+
+      .company-contact-su{
+          display: none;
+      }
+
+      /* 아코디언 스타일링 */
+      .accordion {
+          display: block;
+          width: 100%;
+          background-color: rgb(242, 246, 255);
+      }
+
+      .accordion-item {
+          background-color: rgb(242, 246, 255);
+          border: none;
+      }
+
+      .accordion-button {
+          width: 100%;
+          padding: 1rem;
+          background-color: rgb(242, 246, 255);
+          border: none;
+      }
+
+      .accordion-button:not(.collapsed) {
+          background-color: rgb(242, 246, 255);
+          box-shadow: none;
+      }
+
+      .accordion-button:focus {
+          box-shadow: none;
+      }
+
+      .accordion-body {
+          background-color: rgb(242, 246, 255);
+          padding: 1rem;
+          border-top: 1px solid #ddd;
+      }
+
+      .accordion-body div{
+          margin-top: 5px;
+          font-size: 14px;
+
+      }
+
+      /* 제일 밑 설명 */
+      .slogan-ch{
+          display: none;
+      }
+
+      .copy-su{
+          display: block;
+          text-align: center;
+          align-items: center;
+
+      }
+
+      /* 부모 컨테이너 조정 */
+      .second-line-su {
+          padding: 0;
+      }
+
+      .second-line-su > div {
+          width: 100%;
+      }
+}
