@@ -1,105 +1,146 @@
-.swiper {
-    width: 160px;
-    height: 25px;
-    margin: 9px 0 0 4px;
+.tit-kim {
+    font-size: 26px;
   }
-
-  .swiper-slide{
+  
+  .description-kim {
+    font-size: 15px;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  .tit-margin-kim {
+    margin: 80px auto 30px;
+  }
+  
+  .title-kim {
+    display: block;
+  }
+  
+  .item_text {
+    font-size: 14px;
+    color: #333;
+    line-height: 21px;
+  }
+  .price {
+    font-size: 22px;
+    display: inline-block;
+  }
+  
+  .adv {
+    display: inline-block;
+  }
+  
+  .adv span {
+    border: 1px solid #333;
+    color: #333;
+    background: #fff;
+    padding: 3px 9px;
     font-size: 13px;
   }
-
-  nav{
-    font-size: 12px;
-    letter-spacing: -0.3px;
-    font-family: 'Pretendard', 'AppleSDGothicNeo', 'AppleSDGothicNeo-Regular', 'Apple Gothic', 'Malgun Gothic', Arial, Helvetica, serif, sans-serif;
+  
+    .swiper {
+      width: 160px;
+      height: 25px;
+      margin: 9px 0 0 4px;
+    }
+  
+    .swiper-slide{
+      font-size: 13px;
+    }
+  
+    nav{
+      font-size: 12px;
+      letter-spacing: -0.3px;
+      font-family: 'Pretendard', 'AppleSDGothicNeo', 'AppleSDGothicNeo-Regular', 'Apple Gothic', 'Malgun Gothic', Arial, Helvetica, serif, sans-serif;
+    }
+  
+    .nav-first-o{
+      padding: 1.5em 0;
+    }
+  
+    .nav-first-o a{
+      text-decoration: none;
+      color: black;
+    }
+  
+    .nav-first-o a:hover{
+      color: #5e2bb8;
+    }
+  
+    .nav-second-o{
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .nav-second-o a{
+      text-decoration: none;
+      color: black;
+    }
+  
+    .nav-first-box-o{
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .input-box-o{
+      float: left;
+      margin: 1px 0 0 30px;
+      width: 410px;
+      height: 44px;
+      border-radius: 100px;
+      border: solid 2px #111;
+      padding-left: 15px;
   }
-
-  .nav-first-o{
-    padding: 1.5em 0;
+  
+  ::placeholder{
+      color: gray;
+      font-size: 14px;
+      font-weight: 400;
   }
-
-  .nav-first-o a{
-    text-decoration: none;
-    color: black;
+  
+  .nav-badge-o{
+      background-color: #FFFFFF;
+      color: #5e2bb8;
+      border: 1px solid #5e2bb8;
   }
-
-  .nav-first-o a:hover{
-    color: #5e2bb8;
+  
+  .nav-button-o>a:hover{
+      color: #5e2bb8;
   }
-
-  .nav-second-o{
-    display: flex;
-    justify-content: space-between;
+  
+  .menubar-o{
+      border-top: 2px solid #ddd;
+      border-bottom: 2px solid gray;
+      height: 57px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: font-family: 'Pretendard', 'AppleSDGothicNeo', 'AppleSDGothicNeo-Regular', 'Apple Gothic', 'Malgun Gothic', Arial, Helvetica, serif, sans-serif;
   }
-
-  .nav-second-o a{
-    text-decoration: none;
-    color: black;
+  
+  .menubar-o a{
+      text-decoration: none;
+      color: black;
+      font-size: 15px;
   }
-
-  .nav-first-box-o{
-    display: flex;
-    justify-content: space-between;
+  
+  .menubar-o a:hover{
+      color: #5e2bb8;
   }
-
-  .input-box{
-    float: left;
-    margin: 1px 0 0 30px;
-    width: 410px;
-    height: 44px;
-    border-radius: 100px;
-    border: solid 2px #111;
-    padding-left: 15px;
-}
-
-::placeholder{
-    color: gray;
-    font-size: 14px;
-    font-weight: 400;
-}
-
-.nav-badge-o{
-    background-color: #FFFFFF;
-    color: #5e2bb8;
-    border: 1px solid #5e2bb8;
-}
-
-.nav-button-o>a:hover{
-    color: #5e2bb8;
-}
-
-.menubar-o{
-    border-top: 2px solid #ddd;
-    border-bottom: 2px solid gray;
-    height: 57px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: font-family: 'Pretendard', 'AppleSDGothicNeo', 'AppleSDGothicNeo-Regular', 'Apple Gothic', 'Malgun Gothic', Arial, Helvetica, serif, sans-serif;
-}
-
-.menubar-o a{
-    text-decoration: none;
-    color: black;
-    font-size: 15px;
-}
-
-.menubar-o a:hover{
-    color: #5e2bb8;
-}
-
-li>a{
-}
-
-li>a:hover{
-    border-bottom: 2.3px solid #5e2bb8;
-}
-
-.btn{
-    padding: 1rem;
-}
-/* 삭제해야하는 속성 */
+  
+  li>a{
+  }
+  
+  li>a:hover{
+      border-bottom: 2.3px solid #5e2bb8;
+  }
+  
+  .btn{
+      padding: 1rem;
+  }
+  
+  /* 삭제해야하는 속성 */
 .firstArea_park{
     height: 1500px;
     background-color: black;
