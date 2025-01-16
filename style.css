@@ -1,3 +1,17 @@
+.none-kim a {
+  text-decoration: none;
+  color: black;
+}
+
+.trip-size-kim {
+  max-width: 100%; /* 화면 크기에 맞게 조절 */
+  padding: 15px;
+}
+
+.all-tit {
+  margin: 80px auto 30px;
+}
+
 .tit-kim {
   font-size: 26px;
 }
@@ -8,26 +22,27 @@
   margin-top: 10px;
 }
 
-.tit-margin-kim {
-  margin: 80px auto 30px;
+.img-size-kim {
+  width: 282px;
+  height: 210px;
 }
 
-.title-kim {
-  display: block;
+.enter-kim {
+  margin-top: 40px;
 }
 
 .item_text {
   font-size: 14px;
   color: #333;
   line-height: 21px;
-}
-.price {
-  font-size: 22px;
-  display: inline-block;
+  margin-top: 10px;
 }
 
 .adv {
   display: inline-block;
+  color: #666;
+  margin-top: 15px;
+  margin-right: 5px;
 }
 
 .adv span {
@@ -37,6 +52,53 @@
   padding: 3px 9px;
   font-size: 13px;
 }
+
+.price {
+  font-size: 22px;
+}
+
+.third-line-items-kim {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.img-circle-kim {
+  width: 190px;
+  height: 190px;
+  border-radius: 70%;
+  overflow: hidden;
+}
+
+.img-circle-center-kim {
+  width: 300px;
+  height: 300px;
+  border-radius: 70%;
+  overflow: hidden;
+}
+
+.item-title-kim {
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #111;
+}
+
+.item-title-center-kim {
+  margin-top: 10px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #111;
+}
+
+.item-text-kim {
+  font-size: 13px;
+  color: #666;
+  line-height: 18px;
+  margin-bottom: 0;
+}
+
 
   .swiper {
     width: 160px;
