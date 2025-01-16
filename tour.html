@@ -10,12 +10,105 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link href="tour.css" rel="stylesheet" type="text/css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css">
     <link rel="icon"href="/Favicon.png">
     <title>하나투어 : 꿈꾸는 대로, 펼쳐지다</title>
 </head>
 <body>
-    <nav></nav>
+    <nav style="display: flex; flex-direction: column; justify-content: space-around;">
+      <div class="nav-first-o text-end" style="padding: 0 150px;">
+        <a href="#" class="ps-3">로그인</a>
+        <a href="#" class="ps-3">회원가입</a>
+        <a href="#" class="ps-3">고객센터</a>
+      </div>
+
+      <div class="nav-second-o pt-3 pb-4" style="padding: 0 150px;">
+        <div class="nav-first-box-o">
+          <a href="#"><img src="https://image.hanatour.com/usr/static/img2/pc/com/ico-hanatour-logo2.png" style="width: 150px; height: 36px;"/></a>
+          <input type="text" class="input-box" placeholder="검색어를 입력해 주세요"/>
+          <a href="#"><i class="fa-solid fa-magnifying-glass" style="font-size: 18px; position: relative; top: 0.8em; right: 2.3em;"></i></a>
+          <!--Swiper start-->
+          <span class="pt-1 ps-1">
+            <span class="swiper">
+              <span class="swiper-wrapper" id="swiper-wrapper-e89fdcaf104d30f68" aria-live="polite" style="transform: translate3d(0px, -150px, 0px); transition-duration: 0ms;">
+                <a href="#" class="swiper-slide"><span class="badge nav-badge-o">HOT</span> 일본</a>
+                <a href="#" class="swiper-slide"><span class="badge nav-badge-o">HOT</span> 대마도</a>
+                <a href="#" class="swiper-slide"><span class="badge nav-badge-o">HOT</span> 홍콩</a>
+                <a href="#" class="swiper-slide"><span class="badge nav-badge-o">HOT</span> 대만</a>
+                <a href="#" class="swiper-slide"><span class="badge nav-badge-o">HOT</span> 다낭</a>
+                <a href="#" class="swiper-slide"><span class="badge nav-badge-o">HOT</span> 나트랑</a>
+                <a href="#" class="swiper-slide"><span class="badge nav-badge-o">HOT</span> 오사카</a>
+                <a href="#" class="swiper-slide"><span class="badge nav-badge-o">HOT</span> 푸꾸옥</a>
+                <a href="#" class="swiper-slide"><span class="badge nav-badge-o">HOT</span> 장가계</a>
+                <a href="#" class="swiper-slide"><span class="badge nav-badge-o">HOT</span> 싱가포르</a>
+              </span>
+            </span>
+          <!--Swiper end-->
+          </span>
+        </div>
+
+        <div class="row nav-button-o" style="width: 16.5%;">
+          <a href="#" class="text-center col">
+            <div><i class="fa-regular fa-user" style="font-size: 24px;"></i></div>
+            <div style="font-size: 10px; letter-spacing: -0.3px;">마이메뉴</div>
+          </a>
+
+          <a href="#" class="text-center col">
+            <div><i class="fa-regular fa-file-lines" style="font-size: 24px;"></i></div>
+            <div style="font-size: 10px; letter-spacing: -0.3px;">예약내역</div>
+          </a>
+
+          <a href="#" class="text-center col">
+            <div><i class="fa-regular fa-heart" style="font-size: 24px;"></i></div>
+            <div style="font-size: 10px; letter-spacing: -0.3px;">찜</div>
+          </a>
+
+        </div>
+      </div>
+
+      <!--메뉴바-->
+      <div class="menubar-o" style="padding: 0 150px;">
+        <div style="display: flex; align-items: center;">
+        <div class="text-center" style="border-right: 1px solid #ddd; border-left: 1px solid #ddd; width: 138px; height: 57px;">
+          <div class="dropdown">
+            <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-bars"></i> 전체메뉴
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="ps-3 pt-3">
+          <ul style="list-style: none; display: flex; flex-wrap: wrap; padding: 0;">
+            <li><a href="#" class="me-3">베스트</a></li>
+            <li><a href="#" class="me-3">해외여행</a></li>
+            <li><a href="#" class="me-3">항공</a></li>
+            <li><a href="#" class="me-3">호텔</a></li>
+            <li><a href="#" class="me-3">항공+호텔</a></li>
+            <li><a href="#" class="me-3">투어/입장권</a></li>
+            <li><a href="#" class="me-3">국내여행</a></li>
+            <li><a href="#" class="me-3">테마여행</a></li>
+            <li><a href="#" class="me-3">해외골프</a></li>
+            <li><a href="#" class="me-3">제우스</a></li>
+          </ul>
+        </div>
+      </div>
+
+        <div>
+          <a href="#" class="ps-2">하나LIVE</a>
+          <a href="#" class="ps-2">여행기획전</a>
+          <a href="#" class="ps-2">이달의 혜택</a>
+        </div>
+      </div>
+    </nav>
 
     <footer></footer>
     <script
@@ -23,5 +116,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
