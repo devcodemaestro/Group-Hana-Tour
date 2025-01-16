@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/306a3543f7.js" crossorigin="anonymous"></script>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous"
     />
     <link href="tour.css" rel="stylesheet" type="text/css">
     <link rel="icon"href="/Favicon.png">
@@ -17,11 +17,526 @@
 <body>
     <nav></nav>
 
-    <footer></footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
+    <!-- 이 부분이 국내여행페이지 윗부분 입니다
+        CSS에서 (.firstArea_park)도 삭제해야 합니다. -->
+    <div class="firstArea_park">
+        <div>
+        이달의 국내여행 페이지 위쪽
+        </div>
+    </div>
+    <!-- 이 부분이 국내여행페이지 윗부분 입니다 -->
+
+    <div class="middleNavbar_park mb-4">
+        <div class="buttonContainer_park d-flex justify-content-center">
+            <div>
+                <a href="#section1_park">
+                    <button type="button"  class="navbarButton_park">국내패키지</button>
+                </a>
+            </div>
+            <div>
+                <a href="#section2_park">
+                    <button type="button"  class="navbarButton_park">국내숙박</button>
+                </a>
+            </div>
+            <div>
+                <a href="#section3_park">
+                    <button type="button"  class="navbarButton_park">국내항공</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <section class="secondArea_park mb-5" id="section1_park">
+        <div class="d-flex justify-content-center">
+            <img src="./tour_foto/title001_park.jpg" class="mt-5 mb-2" width="100%">
+        </div>
+        <div class="container">
+            <div class="row p-5 d-flex justify-content-center">
+                <div class="col-md-3 cardContainer_park p-0">
+                    <div class="card card_park">
+                        <img src="./tour_foto/card1_park.jpg" class="card-img-top cardImg_park" height="270px">
+                        <div class="card-body mt-3 p-0">
+                            <h6 class="card-title fw-bold cardTitle_park">아이와 함께 추천!</h6>
+                            <p class="card-text fw-bold mb-0 cardText_park">[에어카텔]<br> 제주 롯데호텔 3일+중형렌트카+왕복항공권
+                            </p>
+                            <span class="fs-6"><strong class="fs-4">373,400</strong>원~</span>
+                            <div class="benefit_park mt-1 d-flex justify-content-between">
+                                <span class="point1_park fw-bold">5성급 중문관광단지위치</span>
+                                <span class="point2_park fw-bold">사계절온수풀</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 cardContainer_park p-0 ms-5">
+                    <div class="card card_park">
+                        <img src="./tour_foto/card2_park.jpg" class="card-img-top cardImg_park" height="270px">
+                        <div class="card-body mt-3 p-0">
+                            <h6 class="card-title fw-bold cardTitle_park">스테디셀러 자유여행</h6>
+                            <p class="card-text fw-bold mb-0 cardText_park">[에어카텔]<br>제주 서귀포칼(KAL)호텔+3일+중형렌트카+왕복항공권
+                            </p>
+                            <span class="fs-6"><strong class="fs-4">262,400</strong>원~</span>
+                            <div class="benefit_park mt-1 d-flex justify-content-between">
+                                <span class="point1_park fw-bold">서귀포 위치 5성급</span>
+                                <span class="point2_park fw-bold">아름다운바다&정원</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 cardContainer_park p-0 ms-5">
+                    <div class="card card_park">
+                        <img src="./tour_foto/card3_park.jpg" class="card-img-top cardImg_park" height="270px">
+                        <div class="card-body mt-3 p-0">
+                            <h6 class="card-title fw-bold cardTitle_park">관광+자유일정</h6>
+                            <p class="card-text fw-bold mb-0 cardText_park">[아이동반여행]<br>
+                            제주패키지 3일#첫날+마지막날 버스투어
+                            </p>
+                            <span class="fs-6"><strong class="fs-4">459,000</strong>원~</span>
+                            <div class="benefit_park mt-1 d-flex justify-content-between">
+                                <span class="point1_park fw-bold">제주 과일청 제공</span>
+                                <span class="point2_park fw-bold">그라벨제주호텔 키즈룸</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 cardContainer_park p-0 ms-5">
+                    <div class="card card_park">
+                        <img src="./tour_foto/card4_park.jpg" class="card-img-top cardImg_park" height="270px">
+                        <div class="card-body mt-3 p-0">
+                            <h6 class="card-title fw-bold cardTitle_park">태백-영월 눈꽃 열차여행</h6>
+                            <p class="card-text fw-bold mb-0 cardText_park">영원 당일<br> #눈꽃열차#정암사<br>#청사령포#선돌
+                            </p>
+                            <span class="fs-6"><strong class="fs-4">42,900</strong>원~</span>
+                            <div class="benefit_park mt-1">
+                                <span class="point1_park fw-bold">태백 전통시장 자유중식</span>
+                                <span class="point2_park fw-bold">버스여행</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row p-5 d-flex justify-content-center">
+                <div class="col-md-3 cardContainer_park p-0">
+                    <div class="card card_park">
+                        <img src="./tour_foto/card5_park.jpg" class="card-img-top cardImg_park" height="270px">
+                        <div class="card-body mt-3 p-0">
+                            <h6 class="card-title fw-bold cardTitle_park">대관령눈꽃축제</h6>
+                            <p class="card-text fw-bold mb-0 cardText_park">평창 당일<br>#대관령눈꽃축제#겨울특선
+                            </p>
+                            <span class="fs-6"><strong class="fs-4">32,900</strong>원~</span>
+                            <div class="benefit_park mt-1">
+                                <span class="point1_park fw-bold">오대산 월정사 방문</span>
+                                <span class="point2_park fw-bold">버스 여행</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 cardContainer_park p-0 ms-5">
+                    <div class="card card_park">
+                        <img src="./tour_foto/card6_park.jpg" class="card-img-top cardImg_park" height="270px">
+                        <div class="card-body mt-3 p-0">
+                            <h6 class="card-title fw-bold cardTitle_park">온 가족 즐길 수 있는 눈썰매 여행</h6>
+                            <p class="card-text fw-bold mb-0 cardText_park">[스노우월드+숙박]<br> 하이원리조트2박3일+스노우월드 입장권
+                            </p>
+                            <span class="fs-6"><strong class="fs-4">94,000</strong>원~</span>
+                            <div class="benefit_park mt-1 d-flex justify-content-between">
+                                <span class="point1_park fw-bold">슬로프 뷰 업그레이드</span>
+                                <span class="point2_park fw-bold">하나투어 전용 데스크</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 cardContainer_park p-0 ms-5">
+                    <div class="card card_park">
+                        <img src="./tour_foto/card7_park.jpg" class="card-img-top cardImg_park" height="270px">
+                        <div class="card-body mt-3 p-0">
+                            <h6 class="card-title fw-bold cardTitle_park">산천어축제</h6>
+                            <p class="card-text fw-bold mb-0 cardText_park">화천 당일<br>
+                            #산천어축제#겨울특선
+                            </p>
+                            <span class="fs-6"><strong class="fs-4">39,900</strong>원~</span>
+                            <div class="benefit_park mt-1">
+                                <span class="point1_park fw-bold">입장권+교환권 포함</span>
+                                <span class="point2_park fw-bold">버스여행</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 cardContainer_park p-0 ms-5">
+                    <div class="card card_park">
+                        <img src="./tour_foto/card8_park.jpg" class="card-img-top cardImg_park" height="270px">
+                        <div class="card-body mt-3 p-0">
+                            <h6 class="card-title fw-bold cardTitle_park">새하얀 자작나무 숲 감상</h6>
+                            <p class="card-text fw-bold mb-0 cardText_park">양양/속초/인제 당일<br>#원대리자작나무숲
+                            </p>
+                            <span class="fs-6"><strong class="fs-4">35,900</strong>원~</span>
+                            <div class="benefit_park mt-1">
+                                <span class="point1_park fw-bold">속초중앙시장 방문</span>
+                                <span class="point2_park fw-bold">버스여행</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="thirdArea_park" id="section2_park">
+        <div class="d-flex justify-content-center">
+            <img src="./tour_foto/title002_park.jpg" class="mb-2" width="100%">
+        </div>
+        <div class="container">
+            <div class="row p-5 d-flex justify-content-center">
+                <div class="col-md-3 cardContainer_park p-0">
+                    <div class="card card_park">
+                        <img src="./tour_foto/card9_park.jpg" class="card-img-top cardImg_park" height="270px">
+                        <div class="card-body mt-3 p-0">
+                            <h6 class="card-title fw-bold cardTitle_park">강원 원주시</h6>
+                            <p class="card-text fw-bold mb-0 cardText_park">오크밸리리조트
+                            </p>
+                            <div class="bevorprice_park"><s>130,000원</s></div>
+                            <span class="dicount_park fw-bold">6%</span>
+                            <span class="fs-6"><strong class="fs-4">122,200</strong>원~</span>
+                            <div class="benefit_park mt-1">
+                                <span class="point2_park fw-bold">6% 추가할인</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 cardContainer_park p-0 ms-5">
+                    <div class="card card_park">
+                        <img src="./tour_foto/card10_park.jpg" class="card-img-top cardImg_park" height="270px">
+                        <div class="card-body mt-3 p-0">
+                            <h6 class="card-title fw-bold cardTitle_park">강원 평창군</h6>
+                            <p class="card-text fw-bold mb-0 cardText_park">휘닉스 리조트 평창
+                            </p>
+                            <div class="bevorprice_park"><s>260,000원</s></div>
+                            <span class="dicount_park fw-bold">4%</span>
+                            <span class="fs-6"><strong class="fs-4">249,600</strong>원~</span>
+                            <div class="benefit_park mt-1">
+                                <span class="point2_park fw-bold">4% 추가할인</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 cardContainer_park p-0 ms-5">
+                    <div class="card card_park">
+                        <img src="./tour_foto/card11_park.jpg" class="card-img-top cardImg_park" height="270px">
+                        <div class="card-body mt-3 p-0">
+                            <h6 class="card-title fw-bold cardTitle_park">강원 홍천군</h6>
+                            <p class="card-text fw-bold mb-0 cardText_park">소노벨 비발디파크
+                            </p>
+                            <div class="bevorprice_park"><s>182,000원</s></div>
+                            <span class="dicount_park fw-bold">2%</span>
+                            <span class="fs-6"><strong class="fs-4">178,360</strong>원~</span>
+                            <div class="benefit_park mt-1">
+                                <span class="point2_park fw-bold">2% 추가할인</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 cardContainer_park p-0 ms-5">
+                    <div class="card card_park">
+                        <img src="./tour_foto/card12_park.jpg" class="card-img-top cardImg_park" height="270px">
+                        <div class="card-body mt-3 p-0">
+                            <h6 class="card-title fw-bold cardTitle_park">충남 예산군</h6>
+                            <p class="card-text fw-bold mb-0 cardText_park">덕산 스플라스 리솜
+                            </p>
+                            <div class="bevorprice_park"><s>265,995원</s></div>
+                            <span class="dicount_park fw-bold">8%</span>
+                            <span class="fs-6"><strong class="fs-4">244,715</strong>원~</span>
+                            <div class="benefit_park mt-1">
+                                <span class="point2_park fw-bold">8% 추가할인</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row p-5 d-flex justify-content-center">
+                <div class="col-md-3 cardContainer_park p-0">
+                    <div class="card card_park">
+                        <img src="./tour_foto/card13_park.jpg" class="card-img-top cardImg_park" height="270px">
+                        <div class="card-body mt-3 p-0">
+                            <h6 class="card-title fw-bold cardTitle_park">제주 서귀포시</h6>
+                            <p class="card-text fw-bold mb-0 cardText_park">휘닉스 아일랜드
+                            </p>
+                            <div class="bevorprice_park"><s>240,000원</s></div>
+                            <span class="dicount_park fw-bold">4%</span>
+                            <span class="fs-6"><strong class="fs-4">230,400</strong>원~</span>
+                            <div class="benefit_park mt-1">
+                                <span class="point2_park fw-bold">4% 추가할인</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 cardContainer_park p-0 ms-5">
+                    <div class="card card_park">
+                        <img src="./tour_foto/card14_park.jpg" class="card-img-top cardImg_park" height="270px">
+                        <div class="card-body mt-3 p-0">
+                            <h6 class="card-title fw-bold cardTitle_park">제주 서귀포시</h6>
+                            <p class="card-text fw-bold mb-0 cardText_park">제주롯데호텔
+                            </p>
+                            <div class="bevorprice_park"><s>266,200원</s></div>
+                            <span class="dicount_park fw-bold">2%</span>
+                            <span class="fs-6"><strong class="fs-4">260,876</strong>원~</span>
+                            <div class="benefit_park mt-1">
+                                <span class="point2_park fw-bold">2% 추가할인</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 cardContainer_park p-0 ms-5">
+                    <div class="card card_park">
+                        <img src="./tour_foto/card15_park.jpg" class="card-img-top cardImg_park" height="270px">
+                        <div class="card-body mt-3 p-0">
+                            <h6 class="card-title fw-bold cardTitle_park">부산 동래구</h6>
+                            <p class="card-text fw-bold mb-0 cardText_park">호텔 농심
+                            </p>
+                            <div class="bevorprice_park"><s>180,000원</s></div>
+                            <span class="dicount_park fw-bold">2%</span>
+                            <span class="fs-6"><strong class="fs-4">176,400</strong>원~</span>
+                            <div class="benefit_park mt-1">
+                                <span class="point2_park fw-bold">2% 추가할인</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 cardContainer_park p-0 ms-5">
+                    <div class="card card_park">
+                        <img src="./tour_foto/card16_park.jpg" class="card-img-top cardImg_park" height="270px">
+                        <div class="card-body mt-3 p-0">
+                            <h6 class="card-title fw-bold cardTitle_park">부산 기장군</h6>
+                            <p class="card-text fw-bold mb-0 cardText_park">이제 부산
+                            </p>
+                            <div class="bevorprice_park"><s>405,000원</s></div>
+                            <span class="dicount_park fw-bold">6%</span>
+                            <span class="fs-6"><strong class="fs-4">380,700</strong>원~</span>
+                            <div class="benefit_park mt-1">
+                                <span class="point2_park fw-bold">6% 추가할인</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="forthArea_park" id="section3_park">
+        <div class="d-flex justify-content-center">
+            <img src="./tour_foto/title003_park.jpg" class="mt-5 mb-2" width="100%">
+        </div>
+        <div class="container">
+            <div class="row p-5 d-flex justify-content-center">
+                <div class="col-md-3 cardContainer_park p-0">
+                    <div class="card card_park">
+                        <img src="./tour_foto/card17_park.jpg" class="card-img-top cardImg_park" height="270px">
+                        <div class="card-body mt-3 p-0">
+                            <p class="card-text fw-bold mb-1 cardText_park">김포 <span class="fs-4">→</span> 제주 항공권
+                            </p>
+                            <div class="option_park mb-1">
+                                <span class="optionFirst_park pe-1">편도</span>
+                                <span class="optionSecond_park"></span>
+                                <span class="optionThird_park ps-1">직항</span>
+                            </div>
+                            <span class="fs-6"><strong class="fs-4">29,260</strong>원~</span>
+                            <div class="benefit_park mt-1">
+                                <span class="point1_park fw-bold">제주렌터카7%쿠폰</span>
+                                <span class="point2_park fw-bold">국내숙박5%쿠폰</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 cardContainer_park p-0 ms-5">
+                    <div class="card card_park">
+                        <img src="./tour_foto/card18_park.jpg" class="card-img-top cardImg_park" height="270px">
+                        <div class="card-body mt-3 p-0">
+                            <p class="card-text fw-bold mb-1 cardText_park">제주 <span class="fs-4">→</span> 김포 항공권
+                            </p>
+                            <div class="option_park mb-1">
+                                <span class="optionFirst_park pe-1">편도</span>
+                                <span class="optionSecond_park"></span>
+                                <span class="optionThird_park ps-1">직항</span>
+                            </div>
+                            <span class="fs-6"><strong class="fs-4">24,600</strong>원~</span>
+                            <div class="benefit_park mt-1">
+                                <span class="point1_park fw-bold">제주렌터카7%쿠폰</span>
+                                <span class="point2_park fw-bold">국내숙박5%쿠폰</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 cardContainer_park p-0 ms-5">
+                    <div class="card card_park">
+                        <img src="./tour_foto/card19_park.jpg" class="card-img-top cardImg_park" height="270px">
+                        <div class="card-body mt-3 p-0">
+                            <p class="card-text fw-bold mb-1 cardText_park">청주 <span class="fs-4">→</span> 제주 항공권
+                            </p>
+                            <div class="option_park mb-1">
+                                <span class="optionFirst_park pe-1">편도</span>
+                                <span class="optionSecond_park"></span>
+                                <span class="optionThird_park ps-1">직항</span>
+                            </div>
+                            <span class="fs-6"><strong class="fs-4">21,600</strong>원~</span>
+                            <div class="benefit_park mt-1">
+                                <span class="point1_park fw-bold">제주렌터카7%쿠폰</span>
+                                <span class="point2_park fw-bold">국내숙박5%쿠폰</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 cardContainer_park p-0 ms-5">
+                    <div class="card card_park">
+                        <img src="./tour_foto/card20_park.jpg" class="card-img-top cardImg_park" height="270px">
+                        <div class="card-body mt-3 p-0">
+                            <p class="card-text fw-bold mb-0 cardText_park">부산 <span class="fs-4">→</span> 제주 항공권
+                            </p>
+                            <div class="option_park mb-1">
+                                <span class="optionFirst_park pe-1">편도</span>
+                                <span class="optionSecond_park"></span>
+                                <span class="optionThird_park ps-1">직항</span>
+                            </div>
+                            <span class="fs-6"><strong class="fs-4">27,900</strong>원~</span>
+                            <div class="benefit_park mt-1">
+                                <span class="point1_park fw-bold">제주렌터카7%쿠폰</span>
+                                <span class="point2_park fw-bold">국내숙박5%쿠폰</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row p-5 d-flex justify-content-center">
+                <div class="col-md-3 cardContainer_park p-0">
+                    <div class="card card_park">
+                        <img src="./tour_foto/card21_park.jpg" class="card-img-top cardImg_park" height="270px">
+                        <div class="card-body mt-3 p-0">
+                            <p class="card-text fw-bold mb-0 cardText_park">대구 <span class="fs-4">→</span> 제주 항공권
+                            </p>
+                            <div class="option_park mb-1">
+                                <span class="optionFirst_park pe-1">편도</span>
+                                <span class="optionSecond_park"></span>
+                                <span class="optionThird_park ps-1">직항</span>
+                            </div>
+                            <span class="fs-6"><strong class="fs-4">21,700</strong>원~</span>
+                            <div class="benefit_park mt-1">
+                                <span class="point1_park fw-bold">제주렌터카7%쿠폰</span>
+                                <span class="point2_park fw-bold">국내숙박5%쿠폰</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 cardContainer_park p-0 ms-5">
+                    <div class="card card_park">
+                        <img src="./tour_foto/card22_park.jpg" class="card-img-top cardImg_park" height="270px">
+                        <div class="card-body mt-3 p-0">
+                            <p class="card-text fw-bold mb-0 cardText_park">광주 <span class="fs-4">→</span> 제주 항공권</p>
+                            <div class="option_park mb-1">
+                                <span class="optionFirst_park pe-1">편도</span>
+                                <span class="optionSecond_park"></span>
+                                <span class="optionThird_park ps-1">직항</span>
+                            </div>
+                            <span class="fs-6"><strong class="fs-4">26,600</strong>원~</span>
+                            <div class="benefit_park mt-1 d-flex justify-content-between">
+                                <span class="point1_park fw-bold">제주렌터카7%쿠폰</span>
+                                <span class="point2_park fw-bold">국내숙박5%쿠폰</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 cardContainer_park p-0 ms-5">
+                    <div class="card card_park">
+                        <img src="./tour_foto/card23_park.jpg" class="card-img-top cardImg_park" height="270px">
+                        <div class="card-body mt-3 p-0">
+                            <p class="card-text fw-bold mb-0 cardText_park">김포 <span class="fs-4">→</span> 부산 항공권
+                            </p>
+                            <div class="option_park mb-1">
+                                <span class="optionFirst_park pe-1">편도</span>
+                                <span class="optionSecond_park"></span>
+                                <span class="optionThird_park ps-1">직항</span>
+                            </div>
+                            <span class="fs-6"><strong class="fs-4">34,600</strong>원~</span>
+                            <div class="benefit_park mt-1">
+                                <span class="point1_park fw-bold">국내숙박5%쿠폰</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 cardContainer_park p-0 ms-5">
+                    <div class="card card_park">
+                        <img src="./tour_foto/card24_park.jpg" class="card-img-top cardImg_park" height="270px">
+                        <div class="card-body mt-3 p-0">
+                            <p class="card-text fw-bold mb-0 cardText_park">김포 <span class="fs-4">→</span> 울산 항공권
+                            </p>
+                            <div class="option_park mb-1">
+                                <span class="optionFirst_park pe-1">편도</span>
+                                <span class="optionSecond_park"></span>
+                                <span class="optionThird_park ps-1">직항</span>
+                            </div>
+                            <span class="fs-6"><strong class="fs-4">52,600</strong>원~</span>
+                            <div class="benefit_park mt-1">
+                                <span class="point1_park fw-bold">국내숙박5%쿠폰</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="fivethArea_park" id="section4_park">
+        <div class="container">
+        <div class="row p-5 d-flex justify-content-center">
+            <h3 class="ps-1 pb-4 mt-4 fw-bold fs-4">지금 보고있는 기획전과 비슷한 여행찾기</h3>
+            <div class="col-md-3 cardContainer_park p-0">
+                <div class="card card_park">
+                    <img src="./tour_foto/card25_park.jpg" class="card-img-top cardImg_park" height="270px">
+                    <div class="card-body mt-3 p-0 lastText_park">
+                        <p class="card-text fw-bold mb-1 lastText_park">
+                            언제가도 좋은 아름다운 섬, 제주도
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 cardContainer_park p-0 ms-5">
+                <div class="card card_park">
+                    <img src="./tour_foto/card26_park.jpg" class="card-img-top cardImg_park" height="270px">
+                    <div class="card-body mt-3 p-0 lastText_park">
+                        <p class="card-text fw-bold mb-1 lastText_park">
+                            제주도 실시간렌터카 쿠폰혜택🚗
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 cardContainer_park p-0 ms-5">
+                <div class="card card_park">
+                    <img src="./tour_foto/card27_park.jpg" class="card-img-top cardImg_park" height="270px">
+                    <div class="card-body mt-3 p-0 lastText_park">
+                        <p class="card-text fw-bold mb-1 lastText_park">
+                            새하얀 설경 속, 겨울 국내 여행
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 cardContainer_park p-0 ms-5">
+                <div class="card card_park">
+                    <img src="./tour_foto/card28_park.jpg" class="card-img-top cardImg_park" height="270px">
+                    <div class="card-body mt-3 p-0 lastText_park">
+                        <p class="card-text fw-bold mb-0 lastText_park">
+                            넘버원 윈터스포츠 하이원
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+        <footer></footer>
+        <script src="./tour.js"></script>
+        <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"
     ></script>
 </body>
 </html>
