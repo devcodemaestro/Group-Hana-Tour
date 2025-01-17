@@ -1,3 +1,21 @@
+.none-kim a {
+  text-decoration: none;
+  color: black;
+}
+
+.item-size-kim{
+  margin-bottom: 50px;
+}
+
+.item-size-kim:hover {
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+}
+
+.all-tit {
+  margin: 80px auto 30px;
+}
+
 .tit-kim {
   font-size: 26px;
 }
@@ -8,26 +26,27 @@
   margin-top: 10px;
 }
 
-.tit-margin-kim {
-  margin: 80px auto 30px;
+.img-size-kim {
+  width: 282px;
+  height: 210px;
 }
 
-.title-kim {
-  display: block;
+.enter-kim {
+  margin-top: 40px;
 }
 
 .item_text {
   font-size: 14px;
   color: #333;
   line-height: 21px;
-}
-.price {
-  font-size: 22px;
-  display: inline-block;
+  margin-top: 10px;
 }
 
 .adv {
   display: inline-block;
+  color: #666;
+  margin-top: 15px;
+  margin-right: 5px;
 }
 
 .adv span {
@@ -37,6 +56,87 @@
   padding: 3px 9px;
   font-size: 13px;
 }
+
+.price {
+  font-size: 22px;
+}
+
+.third-line-items-kim {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.big-k {
+  margin-bottom: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.big-k:hover {
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+}
+
+.img-circle-kim {
+  width: 190px;
+  height: 190px;
+  border-radius: 70%;
+  overflow: hidden;
+}
+
+.img-circle-center-kim {
+  width: 300px;
+  height: 300px;
+  border-radius: 70%;
+  overflow: hidden;
+}
+
+.item-title-kim {
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #111;
+}
+
+.item-title-center-kim {
+  margin-top: 10px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #111;
+}
+
+.item-text-kim {
+  font-size: 13px;
+  color: #666;
+  line-height: 18px;
+  margin-bottom: 0;
+}
+
+.reco-kim{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 48px;
+  color: #fff;
+  background-color: #5e2bb8;
+  font-size: 12px;
+  position: absolute;
+  top: 21px;
+  right: 33px;
+}
+
+@media (orientation:portrait) {
+  .third-line-items-kim{
+    display: block;
+  }
+  .reco-kim{
+    right: 235px;
+  }
+}
+
 
   .swiper {
     width: 160px;
@@ -159,12 +259,6 @@
 /* 
 footer css start */
 
-footer{
-  position: absolute;
-  bottom:0 ;
-  background-color: white;
-  width: 100%;
-}
 
 .ul-su{
   display: flex;
