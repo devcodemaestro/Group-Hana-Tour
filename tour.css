@@ -337,7 +337,7 @@ nav {
 }
 
 .navbarButton_park.active {
-    background-color: #11111199;
+    background-color: #11111199 !important;
     color: #ffff;
     font-weight: bold;
 }
