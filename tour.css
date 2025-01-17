@@ -38,107 +38,123 @@
     font-size: 13px;
   }
   
-    .swiper {
-      width: 160px;
-      height: 25px;
-      margin: 9px 0 0 4px;
-    }
-  
-    .swiper-slide{
-      font-size: 13px;
-    }
-  
-    nav{
-      font-size: 12px;
-      letter-spacing: -0.3px;
-      font-family: 'Pretendard', 'AppleSDGothicNeo', 'AppleSDGothicNeo-Regular', 'Apple Gothic', 'Malgun Gothic', Arial, Helvetica, serif, sans-serif;
-    }
-  
-    .nav-first-o{
-      padding: 1.5em 0;
-    }
-  
-    .nav-first-o a{
-      text-decoration: none;
-      color: black;
-    }
-  
-    .nav-first-o a:hover{
-      color: #5e2bb8;
-    }
-  
-    .nav-second-o{
-      display: flex;
-      justify-content: space-between;
-    }
-  
-    .nav-second-o a{
-      text-decoration: none;
-      color: black;
-    }
-  
-    .nav-first-box-o{
-      display: flex;
-      justify-content: space-between;
-    }
-  
-    .input-box-o{
-      float: left;
-      margin: 1px 0 0 30px;
-      width: 410px;
-      height: 44px;
-      border-radius: 100px;
-      border: solid 2px #111;
-      padding-left: 15px;
+  .swiper {
+    width: 160px;
+    height: 25px;
+    margin: 9px 0 0 4px;
   }
-  
-  ::placeholder{
-      color: gray;
-      font-size: 14px;
-      font-weight: 400;
+
+  .swiper-slide{
+    font-size: 13px;
   }
-  
-  .nav-badge-o{
-      background-color: #FFFFFF;
-      color: #5e2bb8;
-      border: 1px solid #5e2bb8;
+
+  nav{
+    font-size: 12px;
+    letter-spacing: -0.3px;
+    font-family: 'Pretendard', 'AppleSDGothicNeo', 'AppleSDGothicNeo-Regular', 'Apple Gothic', 'Malgun Gothic', Arial, Helvetica, serif, sans-serif;
   }
-  
-  .nav-button-o>a:hover{
-      color: #5e2bb8;
+
+  .nav-first-o a{
+    text-decoration: none;
+    color: black;
   }
-  
-  .menubar-o{
-      border-top: 2px solid #ddd;
-      border-bottom: 2px solid gray;
-      height: 57px;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-family: font-family: 'Pretendard', 'AppleSDGothicNeo', 'AppleSDGothicNeo-Regular', 'Apple Gothic', 'Malgun Gothic', Arial, Helvetica, serif, sans-serif;
+
+  .nav-first-o a:hover{
+    color: #5e2bb8;
   }
-  
-  .menubar-o a{
-      text-decoration: none;
-      color: black;
-      font-size: 15px;
+
+  .nav-second-o{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px;
   }
-  
-  .menubar-o a:hover{
-      color: #5e2bb8;
+
+  .nav-second-o a{
+    text-decoration: none;
+    color: black;
   }
-  
-  li>a{
+
+  .nav-first-box-o{
+    display: flex;
+    justify-content: space-between;
   }
-  
-  li>a:hover{
-      border-bottom: 2.3px solid #5e2bb8;
-  }
-  
-  .btn{
-      padding: 1rem;
-  }
+
+  .input-box-o{
+    float: left;
+    margin: 1px 0 0 30px;
+    width: 410px;
+    height: 44px;
+    border-radius: 100px;
+    border: solid 2px #111;
+    padding-left: 15px;
+}
+
+::placeholder{
+    color: gray;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.nav-badge-o{
+    background-color: #FFFFFF;
+    color: #5e2bb8;
+    border: 1px solid #5e2bb8;
+}
+
+.nav-button-o{
+  position: relative;
+  left: 50px;
+}
+
+.nav-button-o>a:hover{
+    color: #5e2bb8;
+}
+
+.bg-body-tertiary{
+  background-color: #fff;
+}
+
+.nav-left-o{
+  padding-left: 150px;
+}
+
+.nav-right-o{
+  padding-left: 100px;
+}
+
+.menu-list-o a:hover{
+    border-bottom: 2.3px solid #5e2bb8;
+}
+
+.btn{
+    padding: 1rem;
+}
+
+.first-page-o{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(174, 240, 248);
+}
+
+.btn-o{
+  font-size: 15px;
+  color: gray;
+}
+
+.depart-btn-o{
+  background-color: white;
+  width: 330px;
+  height: 52px;
+  text-align: left;
+  font-size: 17px;
+  color: gray;
+}
+
+.btn:hover{
+  background-color: white;
+  color: gray;
+}
   
   /* 삭제해야하는 속성 */
 .firstArea_park{
