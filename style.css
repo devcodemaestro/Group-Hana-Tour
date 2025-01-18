@@ -68,6 +68,7 @@
   .col-md-3 {
     width: 100%;           /* 전체 너비를 사용하여 1열로 변경 */
   }
+  
   .chattingBox_park{
     display: none;
   }
