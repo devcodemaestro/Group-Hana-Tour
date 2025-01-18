@@ -599,7 +599,7 @@ nav {
     width: 100%;
     height: auto;
     min-width: 500px;
-    min-height: 130px;
+    min-height: 80px;
     max-width: 2000px;
   }
   .displayNone_park {
@@ -614,6 +614,39 @@ nav {
   .chattingBox_park {
     display: none;
   }
+}
+
+@media (max-width: 490px){
+  .titleImgMedia_park{
+    width: 100%;
+    min-height: 80px;
+    min-width: 490px;
+  }
+  .buttonContainer_park{
+    width: 100%;
+  }
+  .navbarButton_park{
+    width: 100%;
+  }
+  .benefit_park{
+    display: flex;
+    justify-content: flex-start !important;
+  }
+  }
+
+  @media (max-width: 390px){
+    .titleImgMedia_park{
+      width: 100%;
+      min-height: 80px;
+      min-width: 390px;
+    }
+    .buttonContainer_park{
+      width: 100%;
+    }
+    .navbarButton_park{
+      width: 100%;
+    }
+
 }
 
 /* footer css start */
