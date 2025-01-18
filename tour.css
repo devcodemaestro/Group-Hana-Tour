@@ -88,8 +88,9 @@ body {
 nav {
   font-size: 12px;
   letter-spacing: -0.3px;
-  font-family: "Pretendard", "AppleSDGothicNeo", "AppleSDGothicNeo-Regular",
-    "Apple Gothic", "Malgun Gothic", Arial, Helvetica, serif, sans-serif;
+  font-family: 'Pretendard', 'AppleSDGothicNeo', 'AppleSDGothicNeo-Regular',
+    'Apple Gothic', 'Malgun Gothic', Arial, Helvetica, serif, sans-serif;
+    padding: 0;
 }
 
 .nav-first-o a {
@@ -101,9 +102,9 @@ nav {
   color: #5e2bb8;
 }
 
-.nav-second-o {
+.nav-second-o{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0 50px;
 }
 
@@ -140,8 +141,10 @@ nav {
 }
 
 .nav-button-o {
+  display: flex;
   position: relative;
-  left: 50px;
+  left: 120px;
+  width: 16.5%;
 }
 
 .nav-button-o > a:hover {
@@ -160,6 +163,17 @@ nav {
   padding-left: 100px;
 }
 
+.menu-list-o{
+  margin-left: 1em;
+}
+
+
+@media screen and(max-width:48rem) {
+  .menu-list-o{
+    display: none;
+  }
+  }
+
 .menu-list-o a:hover {
   border-bottom: 2.3px solid #5e2bb8;
 }
@@ -167,26 +181,39 @@ nav {
 .btn {
   padding: 1rem;
 }
+/* ------------------------------ */
+/* minje 추가 css */
+.first-page-o-s {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
 
+/*minje css 수정 */
 .first-page-o {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: 130px;
+  width: 2000px;
+  height: 720px;
   background-color: rgb(174, 240, 248);
 }
 
-.btn-o {
-  font-size: 15px;
-  color: gray;
-}
+@media screen and (max-width:992px){
+  .nav-button-o {
+    display: none;
+  }
+  .input-box-o {
+    display: none;
+  }
+  .pt-1.ps-1.col {
+    display: none;
+  }
+  .nav-first-box-o > a > i {
+    display: none;
+  }
 
-.depart-btn-o {
-  background-color: white;
-  width: 330px;
-  height: 52px;
-  text-align: left;
-  font-size: 17px;
-  color: gray;
 }
 
 .btn:hover {

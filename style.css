@@ -231,6 +231,7 @@ nav {
   letter-spacing: -0.3px;
   font-family: 'Pretendard', 'AppleSDGothicNeo', 'AppleSDGothicNeo-Regular',
     'Apple Gothic', 'Malgun Gothic', Arial, Helvetica, serif, sans-serif;
+    padding: 0;
 }
 
 .nav-first-o a {
@@ -346,6 +347,19 @@ nav {
     width: 100%;
     padding: 20px;
     flex-direction: column;
+  }
+
+  .nav-button-o {
+    display: none;
+  }
+  .input-box-o {
+    display: none;
+  }
+  .pt-1.ps-1.col {
+    display: none;
+  }
+  .nav-first-box-o > a > i {
+    display: none;
   }
 
   /* 오른쪽 슬라이드 숨기기 */
