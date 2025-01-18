@@ -29,6 +29,8 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "pretendard", "AppleSDGothicNeo", "AppleSDGothicNeo-Regular",
+    "Apple Gothic", "Malgun Gothic", Arial, Helvetica, serif, sans-serif;
 }
 
 .tit-kim {
@@ -196,10 +198,6 @@ nav {
   margin-bottom: 3.75rem;
 }
 
-.contents_jae {
-  min-height: 350px;
-}
-
 .key_visual_jae {
   margin: 0 auto;
   position: relative;
@@ -233,7 +231,7 @@ nav {
 }
 
 .bnr_area_jae {
-  padding: 60px 0;
+  padding: 3.75rem 0;
 }
 
 .bnr_area_jae > img {
@@ -241,43 +239,51 @@ nav {
 }
 
 .domestic-container-jae {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  margin: 0 auto;
   max-width: 1200px;
-  gap: 40px;
-  margin: 0 auto 20px;
 }
 
-.container {
-  font-family: 'Pretendard', 'AppleSDGothicNeo', 'AppleSDGothicNeo-Regular',
-    'Apple Gothic', 'Malgun Gothic', Arial, Helvetica, serif, sans-serif;
+.card-container-jae {
+  max-width: 1200px;
 }
 
 .card_jae {
   width: 100%;
-  border: 1px solid #eee;
-  border-radius: 16px;
-  max-width: 1200px;
-  max-height: 360px;
+  border: 0.0625rem solid #eee;
+  /* max-height: 22.5rem; */
+  /* height: auto; */
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.row-jae {
+  max-width: 100%;
+  max-height: auto;
+  margin: 0;
 }
 
 .domestic-list {
   width: 100%;
 }
 
+.img-container_jae {
+  max-width: 36.25rem;
+  max-height: 22.5rem;
+}
+
 .img-list_jae {
-  width: 580px;
-  height: 360px;
+  position: relative;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
-  object-fit: cover;
 }
 
 .img-list_jae > img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 16px;
+  border-radius: 1rem;
 }
 
 .card-body {
@@ -288,11 +294,13 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 36.25rem;
+  max-height: 22.5rem;
 }
 
 .travel-card-title-jae {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .travel_price_jae {
@@ -324,7 +332,7 @@ nav {
 
 .benefit_list_jae {
   font-size: 16px;
-  line-height: 18px;
+  line-height: 24px;
   color: #333;
   padding: 0;
 }
@@ -334,14 +342,52 @@ nav {
 }
 
 .benefit_list_jae > li::before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 4px;
   height: 4px;
   background: #111;
   border-radius: 100%;
   vertical-align: middle;
-  margin: -3px 4px 0 0;
+  margin: -0.1875rem 0.25rem 0 0;
+}
+
+@media (min-width: 767px) {
+  .img-container_jae,
+  .center_jae {
+    max-width: 36.25rem;
+    max-height: 22.5rem;
+    overflow: hidden;
+  }
+  .img-list_jae {
+    width: 100%;
+    height: 100%;
+  }
+  .img-list_jae img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .img-container_jae,
+  .center_jae {
+    max-width: 100%;
+    max-height: none;
+    overflow: visible;
+  }
+  .img-list_jae {
+    width: 100%;
+    height: auto;
+  }
+  .img-list_jae img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
 }
 
 /* 페이지 하단(park) */
@@ -448,7 +494,7 @@ nav {
 }
 
 .optionSecond_park:before {
-  content: '|';
+  content: "|";
 }
 
 .lastText_park {
