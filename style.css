@@ -169,9 +169,9 @@ nav {
   color: #5e2bb8;
 }
 
-.nav-second-o {
+.nav-second-o{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0 50px;
 }
 
@@ -208,8 +208,10 @@ nav {
 }
 
 .nav-button-o {
+  display: flex;
   position: relative;
-  left: 50px;
+  left: 120px;
+  width: 16.5%;
 }
 
 .nav-button-o > a:hover {
@@ -227,6 +229,17 @@ nav {
 .nav-right-o {
   padding-left: 100px;
 }
+
+.menu-list-o{
+  margin-left: 1em;
+}
+
+
+@media screen and(max-width:48rem) {
+  .menu-list-o{
+    display: none;
+  }
+  }
 
 .menu-list-o a:hover {
   border-bottom: 2.3px solid #5e2bb8;
