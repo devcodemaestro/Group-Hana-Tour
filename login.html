@@ -15,133 +15,144 @@
     />
     <link href="login.css" rel="stylesheet" type="text/css" />
     <link rel="icon" href="/Favicon.png" />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css"
+    />
     <title>하나투어 : 꿈꾸는 대로, 펼쳐지다</title>
   </head>
   <body>
     <div class="container0-login">
-    <div class="container1-login">
-      <div>
-        <!-- 상단바 -->
-        <div class="nav-sung">
+      <div class="container1-login">
+        <div>
+          <!-- 상단바 -->
+          <div class="nav-sung">
             <a href="/index.html">
-              <img src="	https://image.hanatour.com/usr/static/img2/mobile/com/ico_back_24.png" width="24"/>
+              <img
+                src="	https://image.hanatour.com/usr/static/img2/mobile/com/ico_back_24.png"
+                width="24"
+              />
             </a>
             <div class="nav-item-sung">로그인</div>
-          
-        </div>
+          </div>
 
-        <!-- 메인 -->
-        <div class="main-sung">
-          <!--메인-하나투어 로고 -->
+          <!-- 메인 -->
+          <div class="main-sung">
+            <!--메인-하나투어 로고 -->
             <img
-            src="https://image.hanatour.com/usr/static/img2/mobile/com/img_logo_hana_660x148.png
-            " width="195" class="main-logo-sung" />
-          
-          <!-- 메인-로그인 입력 -->
-          <div>
-            <div class="form-floating">
-              <input
-                type="email"
-                class="form-control"
-                id="floatingInput"
-                placeholder="name@hanatour.com"
-              />
-              <label for="floatingInput">아이디(이메일 계정)</label>
+              src="https://image.hanatour.com/usr/static/img2/mobile/com/img_logo_hana_660x148.png
+            "
+              width="195"
+              class="main-logo-sung"
+            />
+
+            <!-- 메인-로그인 입력 -->
+            <div>
+              <div class="form-floating">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@hanatour.com"
+                />
+                <label for="floatingInput">아이디(이메일 계정)</label>
+              </div>
+
+              <div class="form-floating">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="floatingPassword"
+                  placeholder="Password"
+                />
+                <label for="floatingPassword">비밀번호</label>
+              </div>
             </div>
 
-            <div class="form-floating">
-              <input
-                type="password"
-                class="form-control"
-                id="floatingPassword"
-                placeholder="Password"
-              />
-              <label for="floatingPassword">비밀번호</label>
+            <!-- 메인-로그인 버튼 -->
+            <div>
+              <button class="login-button">로그인</button>
+            </div>
+
+            <!-- 메인- 아이디 저장 -->
+            <div class="login-last">
+              <div class="form-check form-check-inline login-last-font">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="inlineCheckbox1"
+                  value="option1"
+                />
+                <label class="form-check-label" for="inlineCheckbox1"
+                  >아이디 저장</label
+                >
+              </div>
+
+              <div>
+                <span class="login-last-font"><a href="#">아이디 찾기</a></span>
+                <span class="login-last-font">|</span>
+                <span class="login-last-font"
+                  ><a href="#">비밀번호 찾기</a></span
+                >
+              </div>
+            </div>
+
+            <!-- 메인-간편하게로그인하기 -->
+            <div class="login-last">
+              <div class="login-last-font">간편하게 로그인하기</div>
+
+              <div>
+                <span>
+                  <a href="#">
+                    <img
+                      src="https://image.hanatour.com/usr/static/img2/mobile/com/btn_naver_192x192.png"
+                      width="48"
+                    />
+                  </a>
+                </span>
+
+                <span>
+                  <a href="#">
+                    <img
+                      src="	https://image.hanatour.com/usr/static/img2/mobile/com/btn_kakao_192x192.png"
+                      width="48"
+                    />
+                  </a>
+                </span>
+
+                <span>
+                  <a href="#">
+                    <img
+                      src="	https://image.hanatour.com/usr/static/img2/mobile/com/btn_apple_192x192.png"
+                      width="48"
+                    />
+                  </a>
+                </span>
+              </div>
             </div>
           </div>
 
-          <!-- 메인-로그인 버튼 -->
-          <div>
-            <button class="login-button">로그인</button>
-          </div>
-
-          <!-- 메인- 아이디 저장 -->
-          <div class="login-last">
-            <div class="form-check form-check-inline login-last-font ">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                id="inlineCheckbox1"
-                value="option1"
+          <!-- 하단 -->
+          <div class="footer-sung">
+            <div class="login-last-font">
+              회원가입하고<img
+                src="	https://image.hanatour.com/usr/static/img2/mobile/com/ico_joinTxt_before.png"
+                width="17"
               />
-              <label class="form-check-label" for="inlineCheckbox1"
-                >아이디 저장</label
-              >
+              <strong>회원 전용 할인/혜택</strong>을 받아보세요!
             </div>
 
             <div>
-              <span class="login-last-font"><a href="#">아이디 찾기</a></span>
-              <span class="login-last-font">|</span>
-              <span class="login-last-font"><a href="#">비밀번호 찾기</a></span>
+              <button class="login-button2">통합 회원 가입하기</button>
             </div>
-          </div>
-
-          <!-- 메인-간편하게로그인하기 -->
-          <div class="login-last">
-            <div class="login-last-font">간편하게 로그인하기
-
-            </div>
-            
             <div>
-              <span>
-                <a href="#">
-                  <img
-                  src="https://image.hanatour.com/usr/static/img2/mobile/com/btn_naver_192x192.png"
-                 width="48"/>
-                </a>
-              </span>
-
-              <span>
-                <a href="#">
-                  <img
-                  src="	https://image.hanatour.com/usr/static/img2/mobile/com/btn_kakao_192x192.png"
-                 width="48"/>
-                </a>
-              </span>
-
-              <span>
-                <a href="#">
-                  <img
-                  src="	https://image.hanatour.com/usr/static/img2/mobile/com/btn_apple_192x192.png"
-                 width="48"/>
-                </a>
-              </span>
-
+              <a href="#" class="login-last-font2">비회원 예약조회</a>
             </div>
           </div>
-
         </div>
-        
-        <!-- 하단 -->
-        <div class="footer-sung">
-          <div class="login-last-font">
-            회원가입하고<img
-              src="	https://image.hanatour.com/usr/static/img2/mobile/com/ico_joinTxt_before.png"
-            width="17"/>
-            <strong>회원 전용 할인/혜택</strong>을 받아보세요!
-          </div>
-
-          <div>
-            <button class="login-button2">통합 회원 가입하기</button>
-          </div>
-          <div>
-            <a href="#" class="login-last-font2">비회원 예약조회</a>
-          </div>
-        </div>
-        
-
       </div>
-    </div>
     </div>
 
     <script
