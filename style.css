@@ -8,6 +8,36 @@
     'Apple Gothic', 'Malgun Gothic', Arial, Helvetica, serif, sans-serif;
 }
 
+/* minje : 추가된 미디어 쿼리 */
+
+@media (max-width: 1200px) {
+  /* 전체 컨테이너에 좌우 여백을 추가하여 콘텐츠가 화면 끝에 붙지 않도록함 */
+  .none-kim {
+    padding: 0 15px;
+  }
+  
+  /* 섹션 제목을 화면 중앙에 위치시키고, 위아래 여백을 조정 */
+  .all-tit {
+    text-align: center;
+    margin: 50px auto 20px;
+  }
+
+  /* Bootstrap의 col-md-3를 수정하여 2열 레이아웃으로 변경 */
+  .col-md-3 {
+    display: flex;          
+    justify-content: center;
+    width: 50%;            /* 화면을 2등분하여 2열로 만듦 */
+  }
+}
+
+@media (max-width: 768px) {
+  /* 화면이 더 작아지면 1열로 변경하여 모바일에 최적화 */
+  .col-md-3 {
+    width: 100%;           /* 전체 너비를 사용하여 1열로 변경 */
+  }
+}
+
+
 .item-size-kim {
   margin-bottom: 50px;
 }
