@@ -55,6 +55,7 @@
   background: #fff;
   padding: 3px 9px;
   font-size: 13px;
+  white-space: nowrap;
 }
 
 .price {
