@@ -1,6 +1,37 @@
+.chattingBox_park {
+  border: 1px solid #111;
+  width: 120px;
+  background-color: #fff;
+  position: fixed;
+  right: 0;
+  z-index: 2000;
+  font-size: 13px;
+}
+.chattingFirst_park {
+  border-bottom: 1px solid #111;
+}
+.chattingSecond_park {
+  border-bottom: 1px solid #aaa;
+}
+.chattingSecond_park,
+.chattingThird_park {
+  background-color: #f3f3f3;
+}
+.chattingThird_park a {
+  text-decoration: none;
+  color: black;
+}
+.firstA_park {
+  margin-right: 5px;
+}
+.secondA_park {
+  margin-left: 5px;
+}
 body {
   margin: 0;
   padding: 0;
+  font-family: "pretendard", "AppleSDGothicNeo", "AppleSDGothicNeo-Regular",
+    "Apple Gothic", "Malgun Gothic", Arial, Helvetica, serif, sans-serif;
 }
 
 .tit-kim {
@@ -57,8 +88,8 @@ body {
 nav {
   font-size: 12px;
   letter-spacing: -0.3px;
-  font-family: 'Pretendard', 'AppleSDGothicNeo', 'AppleSDGothicNeo-Regular',
-    'Apple Gothic', 'Malgun Gothic', Arial, Helvetica, serif, sans-serif;
+  font-family: "Pretendard", "AppleSDGothicNeo", "AppleSDGothicNeo-Regular",
+    "Apple Gothic", "Malgun Gothic", Arial, Helvetica, serif, sans-serif;
 }
 
 .nav-first-o a {
@@ -168,10 +199,6 @@ nav {
   margin-bottom: 3.75rem;
 }
 
-.contents_jae {
-  min-height: 350px;
-}
-
 .key_visual_jae {
   margin: 0 auto;
   position: relative;
@@ -205,7 +232,7 @@ nav {
 }
 
 .bnr_area_jae {
-  padding: 60px 0;
+  padding: 3.75rem 0;
 }
 
 .bnr_area_jae > img {
@@ -213,43 +240,51 @@ nav {
 }
 
 .domestic-container-jae {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  margin: 0 auto;
   max-width: 1200px;
-  gap: 40px;
-  margin: 0 auto 20px;
 }
 
-.container {
-  font-family: 'Pretendard', 'AppleSDGothicNeo', 'AppleSDGothicNeo-Regular',
-    'Apple Gothic', 'Malgun Gothic', Arial, Helvetica, serif, sans-serif;
+.card-container-jae {
+  max-width: 1200px;
 }
 
 .card_jae {
   width: 100%;
-  border: 1px solid #eee;
-  border-radius: 16px;
-  max-width: 1200px;
-  max-height: 360px;
+  border: 0.0625rem solid #eee;
+  /* max-height: 22.5rem; */
+  /* height: auto; */
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.row-jae {
+  max-width: 100%;
+  max-height: auto;
+  margin: 0;
 }
 
 .domestic-list {
   width: 100%;
 }
 
+.img-container_jae {
+  max-width: 36.25rem;
+  max-height: 22.5rem;
+}
+
 .img-list_jae {
-  width: 580px;
-  height: 360px;
+  position: relative;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
-  object-fit: cover;
 }
 
 .img-list_jae > img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 16px;
+  border-radius: 1rem;
 }
 
 .card-body {
@@ -260,43 +295,45 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 36.25rem;
+  max-height: 22.5rem;
 }
 
 .travel-card-title-jae {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 
 .travel_price_jae {
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 700;
   display: inline-block;
   padding-bottom: 16px;
 }
 
 .text_jae {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
   color: #682fca;
   margin: 0;
 }
 
 .discount_jae {
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 700;
   color: #ff299c;
   margin-right: 4px;
 }
 
 .price_jae {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #999;
   text-decoration: line-through;
 }
 
 .benefit_list_jae {
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   color: #333;
   padding: 0;
 }
@@ -306,14 +343,100 @@ nav {
 }
 
 .benefit_list_jae > li::before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 4px;
   height: 4px;
   background: #111;
   border-radius: 100%;
   vertical-align: middle;
-  margin: -3px 4px 0 0;
+  margin: -0.1875rem 0.25rem 0 0;
+}
+
+@media (min-width: 767px) {
+  .img-container_jae,
+  .center_jae {
+    max-width: 36.25rem;
+    max-height: 22.5rem;
+    overflow: hidden;
+  }
+  .img-list_jae {
+    width: 100%;
+    height: 100%;
+  }
+  .img-list_jae img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+  .travel-card-title-jae {
+    font-size: clamp(16px, 2.5vw, 20px);
+  }
+
+  .travel_price_jae {
+    font-size: clamp(14px, 2.2vw, 18px);
+  }
+
+  .text_jae {
+    font-size: clamp(12px, 2vw, 16px);
+  }
+
+  .discount_jae {
+    font-size: clamp(14px, 2vw, 18px);
+  }
+
+  .price_jae {
+    font-size: clamp(12px, 1.8vw, 14px);
+  }
+
+  .benefit_list_jae {
+    font-size: clamp(12px, 1.8vw, 14px);
+  }
+}
+
+@media (max-width: 767px) {
+  .img-container_jae,
+  .center_jae {
+    max-width: 100%;
+    max-height: none;
+    overflow: visible;
+  }
+  .img-list_jae {
+    width: 100%;
+    height: auto;
+  }
+  .img-list_jae img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+  @media (max-width: 767px) {
+    .travel-card-title-jae {
+      font-size: clamp(14px, 4vw, 18px);
+    }
+
+    .travel_price_jae {
+      font-size: clamp(13px, 3.5vw, 16px);
+    }
+
+    .text_jae {
+      font-size: clamp(12px, 3.3vw, 14px);
+    }
+
+    .discount_jae {
+      font-size: clamp(14px, 3.5vw, 16px);
+    }
+
+    .price_jae {
+      font-size: clamp(11px, 3vw, 14px);
+    }
+
+    .benefit_list_jae {
+      font-size: clamp(11px, 3vw, 14px);
+    }
+  }
 }
 
 /* 페이지 하단(park) */
@@ -420,7 +543,7 @@ nav {
 }
 
 .optionSecond_park:before {
-  content: '|';
+  content: "|";
 }
 
 .lastText_park {
@@ -459,6 +582,9 @@ nav {
     display: block;
   }
   .spachforHidden_park {
+    display: none;
+  }
+  .chattingBox_park {
     display: none;
   }
 }
