@@ -230,14 +230,65 @@
 .btn{
     padding: 1rem;
 }
-
-.first-page-o{
+/* ------------------------------ */
+/* minje 추가 css */
+.first-page-o-s{
+  background-color: white;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: rgb(174, 240, 248);
+  justify-content: center;
 }
 
+/*minje css 수정 */
+.first-page-o{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 130px;
+  width: 2000px;
+  height: 720px;
+  background-color: rgb(174, 240, 248);
+ }
+
+ /* minje 메인 미디어쿼리 추가  */
+ @media (max-width: 992px) {
+  .first-page-o {
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  /* 오른쪽 슬라이드 숨기기 */
+  .first-page-o > div:last-child {
+    display: none;
+  }
+
+  /* 왼쪽 검색 영역 중앙 정렬하되, 텍스트는 왼쪽 정렬 유지 */
+  .first-page-o > div:first-child {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;  /* 컨테이너는 중앙에 위치 */
+    width: 330px;    /* 컨테이너 너비 고정 */
+    text-align: left; /* 텍스트 왼쪽 정렬 유지 */
+  }
+
+  /* 입력 필드들의 너비 유지 */
+  input[type="text"],
+  input[type="date"],
+  .depart-btn-o,
+  .dropdown-menu,
+  button.text-center {
+    width: 330px;
+  }
+
+  /* 버튼 그룹 스타일링 */
+  .text-center[role="group"] {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* 버튼들 간격 조절 */
+    border-bottom: 1px solid black;
+  }
+}
+/* ------------------------------ */
 .btn-o{
   font-size: 15px;
   color: gray;
