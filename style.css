@@ -56,11 +56,12 @@
     justify-content: center;
     width: 50%;            /* 화면을 2등분하여 2열로 만듦 */
   }
-  
+
   .reco-kim{
-    margin-right: 50px;
+    margin-right: 10px;
   }
 
+  
 }
 
 @media (max-width: 768px) {
@@ -72,6 +73,11 @@
   .chattingBox_park{
     display: none;
   }
+
+  .reco-kim{
+    margin-right: 50px;
+  }
+
 }
 
 
