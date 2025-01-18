@@ -489,6 +489,9 @@ nav {
     .spachforHidden_park{
         display: none;
     }
+    .chattingBox_park{
+      display: none;
+    }
 }
 
 /* footer css start */
