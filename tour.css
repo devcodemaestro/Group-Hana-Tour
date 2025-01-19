@@ -1011,3 +1011,10 @@ nav {
     width: 100%;
   }
 }
+
+@media (max-width: 576px) {
+  .domestic-container-jae {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
