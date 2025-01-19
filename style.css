@@ -1,4 +1,9 @@
-.chattingBox_park{
+body {
+  font-family: "Pretendard", "AppleSDGothicNeo", "AppleSDGothicNeo-Regular",
+    "Apple Gothic", "Malgun Gothic", Arial, Helvetica, serif, sans-serif;
+}
+
+.chattingBox_park {
   border: 1px solid #111;
   width: 120px;
   background-color: #fff;
@@ -7,23 +12,24 @@
   z-index: 2000;
   font-size: 13px;
 }
-.chattingFirst_park{
+.chattingFirst_park {
   border-bottom: 1px solid #111;
 }
-.chattingSecond_park{
+.chattingSecond_park {
   border-bottom: 1px solid #aaa;
 }
-.chattingSecond_park, .chattingThird_park{
+.chattingSecond_park,
+.chattingThird_park {
   background-color: #f3f3f3;
 }
-.chattingThird_park a{
+.chattingThird_park a {
   text-decoration: none;
   color: black;
 }
-.firstA_park{
+.firstA_park {
   margin-right: 5px;
 }
-.secondA_park{
+.secondA_park {
   margin-left: 5px;
 }
 .none-kim a {
@@ -32,8 +38,10 @@
 }
 
 .row {
-  font-family: 'Pretendard', 'AppleSDGothicNeo', 'AppleSDGothicNeo-Regular',
-    'Apple Gothic', 'Malgun Gothic', Arial, Helvetica, serif, sans-serif;
+  font-family: "Pretendard", "AppleSDGothicNeo", "AppleSDGothicNeo-Regular",
+    "Apple Gothic", "Malgun Gothic", Arial, Helvetica, serif, sans-serif;
+}
+@media screen and (mi) {
 }
 
 /* minje : 추가된 미디어 쿼리 */
@@ -43,7 +51,11 @@
   .none-kim {
     padding: 0 15px;
   }
-  
+
+  .third-line-items-kim {
+    flex-direction: column;
+  }
+
   /* 섹션 제목을 화면 중앙에 위치시키고, 위아래 여백을 조정 */
   .all-tit {
     text-align: center;
@@ -52,34 +64,22 @@
 
   /* Bootstrap의 col-md-3를 수정하여 2열 레이아웃으로 변경 */
   .col-md-3 {
-    display: flex;          
+    display: flex;
     justify-content: center;
-    width: 50%;            /* 화면을 2등분하여 2열로 만듦 */
+    width: 50%; /* 화면을 2등분하여 2열로 만듦 */
   }
-
-  .reco-kim{
-    margin-right: 10px;
-  }
-
-  
 }
 
 @media (max-width: 768px) {
   /* 화면이 더 작아지면 1열로 변경하여 모바일에 최적화 */
   .col-md-3 {
-    width: 100%;           /* 전체 너비를 사용하여 1열로 변경 */
+    width: 100%; /* 전체 너비를 사용하여 1열로 변경 */
   }
-  
-  .chattingBox_park{
+
+  .chattingBox_park {
     display: none;
   }
-
-  .reco-kim{
-    margin-right: 50px;
-  }
-
 }
-
 
 .item-size-kim {
   margin-bottom: 50px;
@@ -207,12 +207,18 @@
   right: 33px;
 }
 
+.nav-button-o {
+  display: flex;
+  gap: 30px;
+  word-break: keep-all;
+}
+
 @media (orientation: portrait) {
   .third-line-items-kim {
     display: block;
   }
   .reco-kim {
-    right: 235px;
+    right: 110px;
   }
 }
 
@@ -229,9 +235,12 @@
 nav {
   font-size: 12px;
   letter-spacing: -0.3px;
-  font-family: 'Pretendard', 'AppleSDGothicNeo', 'AppleSDGothicNeo-Regular',
-    'Apple Gothic', 'Malgun Gothic', Arial, Helvetica, serif, sans-serif;
-    padding: 0;
+  font-family: "Pretendard", "AppleSDGothicNeo", "AppleSDGothicNeo-Regular",
+    "Apple Gothic", "Malgun Gothic", Arial, Helvetica, serif, sans-serif;
+  padding: 0;
+}
+.nav-first-box-o {
+  align-items: center;
 }
 
 .nav-first-o a {
@@ -243,9 +252,9 @@ nav {
   color: #5e2bb8;
 }
 
-.nav-second-o{
+.nav-second-o {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0 50px;
 }
 
@@ -281,13 +290,6 @@ nav {
   border: 1px solid #5e2bb8;
 }
 
-.nav-button-o {
-  display: flex;
-  position: relative;
-  left: 120px;
-  width: 16.5%;
-}
-
 .nav-button-o > a:hover {
   color: #5e2bb8;
 }
@@ -296,23 +298,39 @@ nav {
   background-color: #fff;
 }
 
-.nav-left-o {
-  padding-left: 150px;
+.menu-sm-size {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
 }
 
 .nav-right-o {
   padding-left: 100px;
 }
 
-.menu-list-o{
+.menu-list-o {
   margin-left: 1em;
 }
 
 @media screen and(max-width:48rem) {
-  .menu-list-o{
+  .menu-list-o {
     display: none;
   }
+  .nav-second-o {
+    margin: 0px;
   }
+}
+
+.img-box {
+  flex: 0;
+}
+.nav-left-o {
+  padding: 0 50px;
+}
+.nav-first-box-o {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 
 .menu-list-o a:hover {
   border-bottom: 2.3px solid #5e2bb8;
@@ -348,6 +366,10 @@ nav {
     flex-direction: column;
   }
 
+  .nav-left-o {
+    padding: 0;
+  }
+
   .nav-button-o {
     display: none;
   }
@@ -359,6 +381,19 @@ nav {
   }
   .nav-first-box-o > a > i {
     display: none;
+  }
+  .container.nav-left-o {
+    margin: 0;
+  }
+  .menu-sm-size {
+    border-left: none;
+    border-right: 1px solid #ddd;
+  }
+  .ps-1.col {
+    display: none;
+  }
+  .nav-second-o {
+    margin: 0;
   }
 
   /* 오른쪽 슬라이드 숨기기 */
@@ -376,16 +411,15 @@ nav {
   }
 
   /* 입력 필드들의 너비 유지 */
-  input[type='text'],
-  input[type='date'],
+  input[type="text"],
+  input[type="date"],
   .depart-btn-o,
   .dropdown-menu,
   button.text-center {
     width: 330px;
   }
-
   /* 버튼 그룹 스타일링 */
-  .text-center[role='group'] {
+  .text-center[role="group"] {
     width: 100%;
     display: flex;
     justify-content: space-between; /* 버튼들 간격 조절 */
@@ -569,7 +603,9 @@ footer css start */
   .notice-wrapper {
     display: none;
   }
-
+  .nav-login-jae {
+    margin: 0;
+  }
   .first-line-sung {
     display: block;
   }
@@ -600,7 +636,12 @@ footer css start */
     padding-left: 0;
     padding-right: 0;
   }
-
+  .nav-first-o {
+    padding: 0 20px;
+  }
+  .nav-login-jae {
+    margin: 0 50px;
+  }
   /* 메뉴 스타일링 */
   .menus-su {
     display: block;
@@ -682,6 +723,24 @@ footer css start */
   }
 
   .second-line-su > div {
+    width: 100%;
+  }
+}
+
+.nav-login-jae {
+  margin: 0 50px;
+}
+
+@media (max-width: 1200px) {
+  .nav-login-jae {
+    margin: 0px;
+    width: 105%;
+  }
+}
+
+@media (max-width: 992px) {
+  .nav-login-jae {
+    margin: 0px;
     width: 100%;
   }
 }
