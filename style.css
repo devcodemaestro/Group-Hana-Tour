@@ -353,8 +353,9 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 130px;
-  width: 2000px;
-  height: 720px;
+  /* height, width를 auto (또는 100%)로 */
+  width: 100%;
+  height: auto;
   background-color: rgb(174, 240, 248);
 }
 
@@ -743,4 +744,10 @@ footer css start */
     margin: 0px;
     width: 100%;
   }
+}
+
+.carousel-wrap {
+  display: flex;
+  align-items: center; /* 세로 가운데 */
+  justify-content: center; /* 가로 가운데 */
 }

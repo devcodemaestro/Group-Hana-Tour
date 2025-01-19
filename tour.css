@@ -1,3 +1,8 @@
+body {
+  font-family: "pretendard", "AppleSDGothicNeo", "AppleSDGothicNeo-Regular",
+    "Apple Gothic", "Malgun Gothic", Arial, Helvetica, serif, sans-serif;
+}
+
 .chattingBox_park {
   border: 1px solid #111;
   width: 120px;
@@ -26,12 +31,6 @@
 }
 .secondA_park {
   margin-left: 5px;
-}
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "pretendard", "AppleSDGothicNeo", "AppleSDGothicNeo-Regular",
-    "Apple Gothic", "Malgun Gothic", Arial, Helvetica, serif, sans-serif;
 }
 
 .tit-kim {
@@ -63,18 +62,6 @@ body {
   display: inline-block;
 }
 
-.adv {
-  display: inline-block;
-}
-
-.adv span {
-  border: 1px solid #333;
-  color: #333;
-  background: #fff;
-  padding: 3px 9px;
-  font-size: 13px;
-}
-
 .swiper {
   width: 160px;
   height: 25px;
@@ -88,9 +75,12 @@ body {
 nav {
   font-size: 12px;
   letter-spacing: -0.3px;
-  font-family: 'Pretendard', 'AppleSDGothicNeo', 'AppleSDGothicNeo-Regular',
-    'Apple Gothic', 'Malgun Gothic', Arial, Helvetica, serif, sans-serif;
-    padding: 0;
+  font-family: "Pretendard", "AppleSDGothicNeo", "AppleSDGothicNeo-Regular",
+    "Apple Gothic", "Malgun Gothic", Arial, Helvetica, serif, sans-serif;
+  padding: 0;
+}
+.nav-first-box-o {
+  align-items: center;
 }
 
 .nav-first-o a {
@@ -102,9 +92,9 @@ nav {
   color: #5e2bb8;
 }
 
-.nav-second-o{
+.nav-second-o {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0 50px;
 }
 
@@ -140,19 +130,17 @@ nav {
   border: 1px solid #5e2bb8;
 }
 
-.nav-button-o {
-  display: flex;
-  position: relative;
-  left: 120px;
-  width: 16.5%;
-}
-
 .nav-button-o > a:hover {
   color: #5e2bb8;
 }
 
 .bg-body-tertiary {
   background-color: #fff;
+}
+
+.menu-sm-size {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
 }
 
 .nav-left-o {
@@ -163,16 +151,30 @@ nav {
   padding-left: 100px;
 }
 
-.menu-list-o{
+.menu-list-o {
   margin-left: 1em;
 }
 
-
 @media screen and(max-width:48rem) {
-  .menu-list-o{
+  .menu-list-o {
     display: none;
   }
+  .nav-second-o {
+    margin: 0px;
   }
+}
+
+.img-box {
+  flex: 0;
+}
+.nav-left-o {
+  padding: 0 50px;
+}
+.nav-first-box-o {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 
 .menu-list-o a:hover {
   border-bottom: 2.3px solid #5e2bb8;
@@ -200,7 +202,24 @@ nav {
   background-color: rgb(174, 240, 248);
 }
 
-@media screen and (max-width:992px){
+.nav-button-o {
+  display: flex;
+  gap: 30px;
+  word-break: keep-all;
+}
+
+/* minje 메인 미디어쿼리 추가  */
+@media (max-width: 992px) {
+  .first-page-o {
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .nav-left-o {
+    padding: 0;
+  }
+
   .nav-button-o {
     display: none;
   }
@@ -212,6 +231,49 @@ nav {
   }
   .nav-first-box-o > a > i {
     display: none;
+  }
+  .container.nav-left-o {
+    margin: 0;
+  }
+  .menu-sm-size {
+    border-left: none;
+    border-right: 1px solid #ddd;
+  }
+  .ps-1.col {
+    display: none;
+  }
+  .nav-second-o {
+    margin: 0;
+  }
+
+  /* 오른쪽 슬라이드 숨기기 */
+  .first-page-o > div:last-child {
+    display: none;
+  }
+
+  /* 왼쪽 검색 영역 중앙 정렬하되, 텍스트는 왼쪽 정렬 유지 */
+  .first-page-o > div:first-child {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; /* 컨테이너는 중앙에 위치 */
+    width: 330px; /* 컨테이너 너비 고정 */
+    text-align: left; /* 텍스트 왼쪽 정렬 유지 */
+  }
+
+  /* 입력 필드들의 너비 유지 */
+  input[type="text"],
+  input[type="date"],
+  .depart-btn-o,
+  .dropdown-menu,
+  button.text-center {
+    width: 330px;
+  }
+  /* 버튼 그룹 스타일링 */
+  .text-center[role="group"] {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* 버튼들 간격 조절 */
+    border-bottom: 1px solid black;
   }
 }
 
@@ -267,18 +329,16 @@ nav {
 
 .domestic-container-jae {
   margin: 0 auto;
-  max-width: 1200px;
 }
 
 .card-container-jae {
   max-width: 1200px;
+  padding: 0;
 }
 
 .card_jae {
   width: 100%;
   border: 0.0625rem solid #eee;
-  /* max-height: 22.5rem; */
-  /* height: auto; */
   border-radius: 1rem;
   overflow: hidden;
 }
@@ -287,6 +347,11 @@ nav {
   max-width: 100%;
   max-height: auto;
   margin: 0;
+}
+.row-jae.row {
+  margin: 0;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .domestic-list {
@@ -438,6 +503,7 @@ nav {
     object-fit: cover;
     border-radius: 1rem;
   }
+
   @media (max-width: 767px) {
     .travel-card-title-jae {
       font-size: clamp(14px, 4vw, 18px);
@@ -615,37 +681,36 @@ nav {
   }
 }
 
-@media (max-width: 490px){
-  .titleImgMedia_park{
+@media (max-width: 490px) {
+  .titleImgMedia_park {
     width: 100%;
     min-height: 80px;
     min-width: 490px;
   }
-  .buttonContainer_park{
+  .buttonContainer_park {
     width: 100%;
   }
-  .navbarButton_park{
+  .navbarButton_park {
     width: 100%;
   }
-  .benefit_park{
+  .benefit_park {
     display: flex;
     justify-content: flex-start !important;
   }
+}
+
+@media (max-width: 390px) {
+  .titleImgMedia_park {
+    width: 100%;
+    min-height: 80px;
+    min-width: 390px;
   }
-
-  @media (max-width: 390px){
-    .titleImgMedia_park{
-      width: 100%;
-      min-height: 80px;
-      min-width: 390px;
-    }
-    .buttonContainer_park{
-      width: 100%;
-    }
-    .navbarButton_park{
-      width: 100%;
-    }
-
+  .buttonContainer_park {
+    width: 100%;
+  }
+  .navbarButton_park {
+    width: 100%;
+  }
 }
 
 /* footer css start */
@@ -925,6 +990,24 @@ nav {
   }
 
   .second-line-su > div {
+    width: 100%;
+  }
+}
+
+.nav-login-jae {
+  margin: 0 50px;
+}
+
+@media (max-width: 1200px) {
+  .nav-login-jae {
+    margin: 0px;
+    width: 105%;
+  }
+}
+
+@media (max-width: 992px) {
+  .nav-login-jae {
+    margin: 0px;
     width: 100%;
   }
 }

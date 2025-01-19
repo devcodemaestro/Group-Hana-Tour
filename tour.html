@@ -36,7 +36,7 @@
 
   <body>
     <nav class="container nav-first-o pt-3" id="top_park">
-      <div style="text-align: right">
+      <div style="text-align: right" class="nav-login-jae">
         <a href="/login.html" class="col ps-3">로그인</a>
         <a href="#" class="col ps-3">회원가입</a>
         <a href="#" class="col ps-3">고객센터</a>
@@ -44,7 +44,7 @@
 
       <div class="nav-second-o pt-4 pb-4">
         <div class="nav-first-box-o">
-          <a href="index.html" class="col"
+          <a href="#" class="col img-box"
             ><img
               src="https://image.hanatour.com/usr/static/img2/pc/com/ico-hanatour-logo2.png"
               style="width: 150px; height: 36px"
@@ -57,16 +57,11 @@
           <a href="#"
             ><i
               class="fa-solid fa-magnifying-glass"
-              style="
-                font-size: 18px;
-                position: relative;
-                top: 0.8em;
-                right: 2.3em;
-              "
+              style="font-size: 18px; position: relative; right: 40px; top: 3px"
             ></i
           ></a>
           <!--Swiper start-->
-          <span class="pt-1 ps-1 col">
+          <span class="ps-1 col">
             <span class="swiper">
               <span
                 class="swiper-wrapper"
@@ -113,22 +108,22 @@
           </span>
         </div>
 
-        <div class="row nav-button-o">
-          <a href="#" class="text-center col">
+        <div class="nav-button-o">
+          <a href="#" class="text-center">
             <div>
               <i class="fa-regular fa-user" style="font-size: 24px"></i>
             </div>
             <div style="font-size: 10px; letter-spacing: -0.3px">마이메뉴</div>
           </a>
 
-          <a href="#" class="text-center col">
+          <a href="#" class="text-center">
             <div>
               <i class="fa-regular fa-file-lines" style="font-size: 24px"></i>
             </div>
             <div style="font-size: 10px; letter-spacing: -0.3px">예약내역</div>
           </a>
 
-          <a href="#" class="text-center col">
+          <a href="#" class="text-center">
             <div>
               <i class="fa-regular fa-heart" style="font-size: 24px"></i>
             </div>
@@ -139,122 +134,94 @@
     </nav>
 
     <!--메뉴바-->
-    <div>
-      <nav
-        class="navbar navbar-expand-lg"
-        style="font-size: 15px; word-wrap: normal; padding-bottom: 0px"
-      >
-        <div
-          class="container-fluid nav-left-o"
-          style="border-top: 2px solid #ddd; border-bottom: 2px solid gray"
-        >
-          <div class="dropdown menu-sm-size">
-            <button
-              class="btn"
-              type="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <i class="fa-solid fa-bars"></i> 전체메뉴
-            </button>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="#" style="font-weight: bolder"
-                  >해외여행</a
-                >
-              </li>
-              <li><a class="dropdown-item mb-3" href="#">해외여행 홈</a></li>
-              <li>
-                <a class="dropdown-item" href="#" style="font-weight: bolder"
-                  >국내여행</a
-                >
-              </li>
-              <li><a class="dropdown-item" href="#">제주여행</a></li>
-              <li><a class="dropdown-item" href="#">내륙여행</a></li>
-              <li><a class="dropdown-item" href="#">울릉도/섬</a></li>
-              <li><a class="dropdown-item" href="#">내나라여행</a></li>
-              <li><a class="dropdown-item" href="#">국내골프</a></li>
-            </ul>
-          </div>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav menu-list-o me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >베스트</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >해외여행</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">항공</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">호텔</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >항공+호텔</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >투어/입장권</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >국내여행</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >테마여행</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >해외골프</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >제우스</a
-                >
-              </li>
-            </ul>
-          </div>
+    <nav
+      class="navbar navbar-expand-lg"
+      style="
+        font-size: 15px;
+        word-wrap: normal;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid gray;
+      "
+    >
+      <div class="container nav-left-o">
+        <div class="dropdown menu-sm-size">
+          <button
+            class="btn"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-bars"></i> 전체메뉴
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#" style="font-weight: bolder"
+                >해외여행</a
+              >
+            </li>
+            <li><a class="dropdown-item mb-3" href="#">해외여행 홈</a></li>
+            <li>
+              <a class="dropdown-item" href="#" style="font-weight: bolder"
+                >국내여행</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="#">제주여행</a></li>
+            <li><a class="dropdown-item" href="#">내륙여행</a></li>
+            <li><a class="dropdown-item" href="#">울릉도/섬</a></li>
+            <li><a class="dropdown-item" href="#">내나라여행</a></li>
+            <li><a class="dropdown-item" href="#">국내골프</a></li>
+          </ul>
         </div>
-      </nav>
-      <div class="chattingBox_park">
-        <div class="chattingFirst_park text-center p-4">
-          <img
-            src="https://image.hanatour.com/usr/static/svg/ico_chatai_big.svg"
-            width="40px"
-            height="40px"
-          />
-          <div class="mt-2">AI 채팅상담</div>
-        </div>
-        <div class="chattingSecond_park text-center p-1">최근본상품</div>
-        <div
-          class="chattingThird_park fw-bold p-1 d-flex justify-content-center"
-        >
-          <div class="firstA_park">
-            <a href="#top_park" class=""
-              ><img
-                src="./tour_foto/topicon_park.png"
-                width="10px"
-                height="10px"
-            /></a>
-          </div>
-          <div class="secondA_park">
-            <a href="#top_park">TOP</a>
-          </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav menu-list-o me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">베스트</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >해외여행</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">항공</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">호텔</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >항공+호텔</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >투어/입장권</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >국내여행</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >테마여행</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >해외골프</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">제우스</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
+    </nav>
 
     <section class="firstArea_jae">
       <div class="inr wide">
@@ -1737,16 +1704,19 @@
             <div class="notice-container">
               <div class="notice-content">
                 <div class="notice-item">
-                  <하나LIVE> 1월 14일 방송 -대만- 구매인증 이벤트 당첨자 안내
+                  &lt;하나LIVE&gt; 1월 14일 방송 -대만- 구매인증 이벤트 당첨자
+                  안내
                 </div>
                 <div class="notice-item">
-                  <하나LIVE> 1월 14일 방송 -대만- 퀴즈 이벤트 당첨자 안내
+                  &lt;하나LIVE&gt; 1월 14일 방송 -대만- 퀴즈 이벤트 당첨자 안내
                 </div>
                 <div class="notice-item">
-                  <하나LIVE> 1월 13일 방송 -괌호텔- 구매자 이벤트 당첨자 안내
+                  &lt;하나LIVE&gt; 1월 13일 방송 -괌호텔- 구매자 이벤트 당첨자
+                  안내
                 </div>
                 <div class="notice-item">
-                  <하나LIVE> 1월 13일 방송 -괌호텔- 구매인증 이벤트 당첨자 안내
+                  &lt;하나LIVE&gt; 1월 13일 방송 -괌호텔- 구매인증 이벤트 당첨자
+                  안내
                 </div>
               </div>
             </div>
